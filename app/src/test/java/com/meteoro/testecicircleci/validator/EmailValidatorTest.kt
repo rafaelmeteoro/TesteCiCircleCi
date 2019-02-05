@@ -32,4 +32,9 @@ class EmailValidatorTest {
     fun validatePlus() {
         assertTrue(validator.validate("faelanjelus+1@gmail.com"))
     }
+
+    @Test
+    fun validateNoDot() {
+        assertTrue(validator.validate("faelanjelus@gmailcom"))
+    }
 }
