@@ -99,13 +99,11 @@ workflows:
             branches:
               only:
                 - master
-                - develop
       - check:
           filters:
             branches:
               only:
                 - master
-                - develop
           requires:
             - build
       - test:
@@ -113,6 +111,5 @@ workflows:
             branches:
               only:
                 - master
-                - develop
           requires:
             - build
