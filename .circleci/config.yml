@@ -20,7 +20,7 @@ references:
       at: *workspace_root
 
   general_cache_key: &general_cache_key
-    key: app-{{ checksum "build.gradke.kts" }}-{{ checksum "app/build.gradke.kts" }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "gradle.properties" }}-{{ checksum "gradle/wrapper/gradle-wrapper.properties" }}
+    key: app-{{ checksum "build.gradle.kts" }}-{{ checksum "app/build.gradle.kts" }}-{{ checksum ".circleci/config.yml" }}-{{ checksum "gradle.properties" }}-{{ checksum "gradle/wrapper/gradle-wrapper.properties" }}
 
 jobs:
 
