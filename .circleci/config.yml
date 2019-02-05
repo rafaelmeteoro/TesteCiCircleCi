@@ -64,7 +64,7 @@ jobs:
 
       - run:
           name: Run checks
-          command: ./gradlew lintDebug ktlintCheck
+          command: ./gradlew lintDebug
 
       - store_artifacts:
           path: app/build/reports/
