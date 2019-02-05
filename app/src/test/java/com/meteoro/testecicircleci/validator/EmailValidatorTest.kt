@@ -15,6 +15,6 @@ class EmailValidatorTest {
 
     @Test
     fun validate() {
-        assertTrue(validator.validate("mailum"))
+        assertTrue(validator.validate("faelanjelus@gmail.com"))
     }
 }
