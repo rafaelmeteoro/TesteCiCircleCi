@@ -39,7 +39,7 @@ jobs:
           paths:
             - "~/.gradle"
             - "~/.m2"
-            - "/opt/android-sdk-linux/licences/"
+            - "/opt/android-sdk-linux/licenses/"
 
       - run:
           name: Build
