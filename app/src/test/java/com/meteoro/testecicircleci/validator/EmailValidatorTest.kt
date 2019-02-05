@@ -26,6 +26,6 @@ class EmailValidatorTest {
 
     @Test
     fun validateDot() {
-        assertFalse(validator.validate("fael.anjelus@gmail.com"))
+        assertTrue(validator.validate("fael.anjelus@gmail.com"))
     }
 }
