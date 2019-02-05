@@ -94,10 +94,22 @@ workflows:
 
   build_check_tests:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only:
+                - master
       - check:
+          filters:
+            branches:
+              only:
+                - master
           requires:
             - build
       - test:
+          filters:
+            branches:
+              only:
+                - master
           requires:
             - build
