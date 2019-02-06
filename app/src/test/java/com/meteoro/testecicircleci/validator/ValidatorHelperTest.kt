@@ -15,6 +15,6 @@ class ValidatorHelperTest {
 
     @Test
     fun validate() {
-        assertEquals(validatorHelper.calculateDigit(""), 1)
+        assertEquals(validatorHelper.calculateDigit(""), 0)
     }
 }
