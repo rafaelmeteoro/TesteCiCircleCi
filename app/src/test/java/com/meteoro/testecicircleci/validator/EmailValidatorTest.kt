@@ -1,5 +1,6 @@
 package com.meteoro.testecicircleci.validator
 
+import junit.framework.Assert.assertFalse
 import junit.framework.Assert.assertTrue
 import org.junit.Before
 import org.junit.Test
@@ -35,6 +36,6 @@ class EmailValidatorTest {
 
     @Test
     fun validateNoDot() {
-        assertTrue(validator.validate("faelanjelus@gmailcom"))
+        assertFalse(validator.validate("faelanjelus@gmailcom"))
     }
 }
