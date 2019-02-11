@@ -80,7 +80,8 @@ jobs:
 
       - run:
           name: Run tests
-          command: ./gradlew testDebugUnitTest
+          command: bundle exec fastlane test
+          #command: ./gradlew testDebugUnitTest
 
       - store_artifacts:
           path: app/build/reports/tests/
