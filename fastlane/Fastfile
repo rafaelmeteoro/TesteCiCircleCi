@@ -21,6 +21,15 @@ platform :android do
     gradle(task: "test")
   end
 
+  desc "Run instrumentation tests"
+  lane :instrumentation_tests do
+    automated_test_emulator_run(
+        AVD_setup_path: "fastlane/AVD_setup.json",
+        AVD_recreate_new: false,
+        AVD_clean_after: false,
+        gradle_task: "connectedDebugAndroidTest")
+  end
+
   desc "Submit a new Beta Build to Crashlytics Beta"
   lane :beta do
     gradle(task: "clean assembleRelease")
